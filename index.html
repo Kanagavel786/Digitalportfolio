@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE_edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJ Personal Portfolio</title>
+    <link rel="icon" href="./images/sj-monograms-wedding-circle-handwriting-jewelry-logo-template-vector_615068-2323.avif">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f8a0950719.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+    <!-- ------------portfolio---------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">KV Mobile Shop</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png" >
+                    <div class="layer">
+                        <h3>Social Media Website in Front-End</h3>
+                        <p>This website connects you to talented people around the world.
+                           You can search it from Google.</p>
+                           <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png" >
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>This website connects you to talented people around the world.
+                           You can search it from Google.</p>
+                           <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png" >
+                    <div class="layer">
+                        <h3>Marketing Website</h3>
+                        <p>This website connects you to talented people around the world.
+                           You can search it from Google.</p>
+                           <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div> 
+            <a href="#" class="btn">See More</a>
+        </div>
+
+    <!-- ----------Contact----------- -->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1>Contact Me</h1>
+                        <p><i class="fas fa-paper-plane"></i>kanagukanagu786@gmail.com</p>
+                        <p><i class="fas fa-phone-square-alt"></i>9003544984</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-twitter-square"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-linkedin"></i></a>
+                        </div                   </div>
+                                </div>
+            <div class="copyright">
+                <p>Copyrights &#169;Kanagavel. Made with <i class="fas fa-heart"></i>.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+            
+        }
+    </script>
+</body>
+</html>
